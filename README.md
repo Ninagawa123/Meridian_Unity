@@ -17,7 +17,7 @@ UnityHubに登録されたらプロジェクトを起動します.（Unityのバ
 スクリプト9行目のconst string HOST = "192.168.1.xx"; にESP32DevKitCのIPアドレスを記入し, セーブします. 
 
 #  ESP32のIPアドレスを書き換える
-これまでの手順で設定済みの場合はそのままでOKです.
+これまでの手順で設定済みの場合はそのままでOKです.  
 Meridian_TWINもしくはMeridian_LITEのESP32用ファイルのconfig.hに, Unityを使うPCのIPアドレスを入力します.  
   
 ### Windowsの場合はファイアーウォールを設定する
