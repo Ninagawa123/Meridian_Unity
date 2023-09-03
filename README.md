@@ -18,8 +18,8 @@ UnityHubに登録されたらプロジェクトを起動します.（Unityのバ
 
 #  ESP32のIPアドレスを書き換える
 これまでの手順で設定済みの場合はそのままでOKです.
-Meridian_TWINもしくはMeridian_LITEのESP32用ファイルのconfig.hに, Unityを使うPCのIPアドレスを入力します.
-
+Meridian_TWINもしくはMeridian_LITEのESP32用ファイルのconfig.hに, Unityを使うPCのIPアドレスを入力します.  
+  
 ### Windowsの場合はファイアーウォールを設定する
 Windowsスタートメニュー→「設定」→「更新とセキュリティ」→「Windowsセキュリティ」→「ファイアーウォールとネットワーク保護」→「詳細設定」→「受信の規則」の一覧から「Unity 2020.3.25f1 Editor」の「パブリック」となっているものを選択しダブルクリック.「接続を許可する」にチェックを入れOKします. 
 
