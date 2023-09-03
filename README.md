@@ -3,9 +3,9 @@ MeridianをUnityで動作させるための簡易デモです。
 ※Mac/Winで動作を確認しています。Winではファイアーウォールの設定が必要です。  
   
 Meridianの詳細については下記をご参照ください。  
-[Meridian_info](https://ninagawa123.github.io/Meridian_info/) 基本情報  
-[Meridian_TWIN](https://github.com/Ninagawa123/Meridian_TWIN) ボード情報  
-[Meridian LITE](https://github.com/Ninagawa123/Meridian_LITE) 簡易版ボード情報  
+[Meridian_info](https://ninagawa123.github.io/Meridian_info/) ...基本情報  
+[Meridian_TWIN](https://github.com/Ninagawa123/Meridian_TWIN) ...高機能版のボード情報  
+[Meridian LITE](https://github.com/Ninagawa123/Meridian_LITE) ...簡易版のボード情報  
   
 #  UnityHubに登録して起動する  
 フォルダ「Unity_demo」の中のMeridian_unity_demo_20220704.zipを解凍します。  
