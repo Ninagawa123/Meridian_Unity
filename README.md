@@ -36,3 +36,15 @@ Meridianボードと通信が成立していればロボットの関節にシン
 「Action」にチェックを入れるとUnityからロボットにサンプルのモーションを送信します.  
 左半身の各関節角度をsinカーブで増減させます.  
 このモーションはParamMaster.csの160行目-167行目で設定しているので, 適宜書き換えてお試しください.  
+
+###  トラブルシューティング  
+うまく接続できない場合, ESP32をテストモードに設定することで, ESP32単体とUnityの接続の確立のみに問題を絞ることができます.  
+[Meridian LITE](https://github.com/Ninagawa123/Meridian_LITE) を以下のように改定し, ESP32に書き込みます.  
+- config.h内 #define ESP32_STDALONE 1 としてテストモードを有効にする.  
+- keys.hにWifi設定も書き込む. この時, 接続先が2.4GHz帯となるように注意する.  
+また, 当UnityファイルのUDP_SendHandler.csのConst String Host = ""にESP32のIPアドレスが正しく書き込まれているか確認してください.  
+  
+ESP32はMeridian Boardに挿す必要はなく、ESP32DevkitC単体で試すことができます。  
+ESP32に電源が供給され, かつUnityの再生ボタンが押された状態となれば接続が完了します.  
+<img width="600" alt="SS 1071" src="https://github.com/Ninagawa123/Meridian_Unity/assets/8329123/bf4f53e0-c676-4926-af17-b79a60cd3c8b">  
+接続が成功すると, ESP32側からL0番のサーボに+-30度のダミーデータが送信され, 首を左右に振るような動きになります. 機体の向きは画面に背を向けた状態になります.  
