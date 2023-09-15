@@ -14,8 +14,9 @@ UnityHubに登録されたらプロジェクトを起動します.（Unityのバ
   
 #  UnityのスクリプトのIPアドレスを書き換える
 画面下の「Project」→「Assets」→「Script」よりUdp_handler_sendをダブルクリックして開きます.（VScodeなどが立ち上がります）  
-スクリプト9行目のconst string HOST = "192.168.1.xx"; にESP32DevKitCのIPアドレスを記入し, セーブします. 
-
+スクリプト9行目のconst string HOST = "192.168.1.xx"; にESP32DevKitCのIPアドレスを記入し, セーブします. 　
+(ESP32のIPアドレスはESP32をPCに接続した際にシリアルモニタに表示されます. 詳細は前述のボード情報をご参照ください.)  
+  
 #  ESP32のIPアドレスを書き換える
 これまでの手順で設定済みの場合はそのままでOKです.  
 Meridian_TWINもしくはMeridian_LITEのESP32用ファイルのconfig.hに, Unityを使うPCのIPアドレスを入力します.  
@@ -43,7 +44,7 @@ Meridianボードと通信が成立していればロボットの関節にシン
 - config.h内 #define ESP32_STDALONE 1 としてテストモードを有効にする.  
 - keys.hにWifi設定も書き込む. この時, 接続先が2.4GHz帯となるように注意する.  
 
-また, 当UnityファイルのUDP_SendHandler.csのConst String Host = ""にESP32のIPアドレスが正しく書き込まれているか確認してください.  
+また, 当UnityファイルのUDP_SendHandler.csのConst String Host = ""にESP32のIPアドレスが正しく書き込まれているかを確認してください.  
   
 ESP32はMeridian Boardに挿す必要はなく、ESP32DevkitC単体で試すことができます。  
 ESP32に電源が供給され, かつUnityの再生ボタンが押された状態となれば接続が完了します.  
