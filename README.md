@@ -42,6 +42,7 @@ Meridianボードと通信が成立していればロボットの関節にシン
 [Meridian LITE](https://github.com/Ninagawa123/Meridian_LITE) を以下のように改定し, ESP32に書き込みます.  
 - config.h内 #define ESP32_STDALONE 1 としてテストモードを有効にする.  
 - keys.hにWifi設定も書き込む. この時, 接続先が2.4GHz帯となるように注意する.  
+
 また, 当UnityファイルのUDP_SendHandler.csのConst String Host = ""にESP32のIPアドレスが正しく書き込まれているか確認してください.  
   
 ESP32はMeridian Boardに挿す必要はなく、ESP32DevkitC単体で試すことができます。  
