@@ -1,4 +1,4 @@
-# Meridian_Unity  
+# [Meridian_Unity](https://github.com/Ninagawa123/Meridian_Unity)  
 MeridianをUnityで動作させるための簡易デモです.  
 ※Mac/Winで動作を確認しています. Winではファイアーウォールの設定が必要です.   
   
