@@ -7,17 +7,17 @@ Meridianの詳細については下記をご参照ください.
 [Meridian_TWIN](https://github.com/Ninagawa123/Meridian_TWIN) ...高機能版のボード情報  
 [Meridian LITE](https://github.com/Ninagawa123/Meridian_LITE) ...簡易版のボード情報  
   
-#  UnityHubに登録して起動する  
+## UnityHubに登録して起動する  
 フォルダ「Meridian_Unity_demo1」の中のMeridian_unity_demo_20220704.zipを解凍します.   
 UnityHubを開き, ProjectsのADDで解凍済みの「Meridian_unity_demo_20220704」フォルダを指定します.   
 UnityHubに登録されたらプロジェクトを起動します.（Unityのバージョンは2020.3.25f1(LTS)です） 
   
-#  UnityのスクリプトのIPアドレスを書き換える
+## UnityのスクリプトのIPアドレスを書き換える
 画面下の「Project」→「Assets」→「Script」よりUdp_handler_sendをダブルクリックして開きます.（VScodeなどが立ち上がります）  
 スクリプト9行目のconst string HOST = "192.168.1.xx"; にESP32DevKitCのIPアドレスを記入し, セーブします. 　
 (ESP32のIPアドレスはESP32をPCに接続した際にシリアルモニタに表示されます. 詳細は前述のボード情報をご参照ください.)  
   
-#  ESP32のIPアドレスを書き換える
+## ESP32のIPアドレスを書き換える
 これまでの手順で設定済みの場合はそのままでOKです.  
 Meridian_TWINもしくはMeridian_LITEのESP32用ファイルのconfig.hに, Unityを使うPCのIPアドレスを入力します.  
   
